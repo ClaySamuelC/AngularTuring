@@ -1,0 +1,31 @@
+<h2>Memory</h2>
+<div class="cell-container">
+  @for (cell of ram; track $index) {
+    <div class="cell {{$index == pointer ? 'selected' : ''}}">{{cell}}</div>
+  }
+</div>
+
+<h3>Debug</h3>
+<button (click)="processNext()">Next</button>
+
+<h2>Program</h2>
+<div class="program-container">
+  @for (command of program; track $index) {
+    <div class="command {{$index == programCounter ? 'selected' : ''}}">{{command}}</div>
+  }
+</div>
+
+
+<h3>Input</h3>
+<div class="program-container">
+  @for (data of input; track $index) {
+    <div class="command">{{data}}</div>
+  }
+</div>
+
+<h3>Output</h3>
+<div class="program-container">
+  @for (data of output; track $index) {
+    <div class="command">{{data}}</div>
+  }
+</div>

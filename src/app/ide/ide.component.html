@@ -1,0 +1,15 @@
+<h2>Editor</h2>
+<div class="code-editor">
+  <div class="code-header">
+    <span class="language-label">Brainf*ck</span>
+    <button class="copy-button">Copy</button>
+  </div>
+  <input id="code" type="text" [(ngModel)]="code" />
+</div>
+<button (click)="submitCode()">Compile</button>
+
+<h2>Inputs</h2>
+<div class="code-editor">
+  <input id="inputData" type="text" [(ngModel)]="inputData">
+</div>
+<button (click)="submitInputs()">Submit</button>

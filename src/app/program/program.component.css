@@ -1,0 +1,46 @@
+.cell-container {
+  display: grid;
+  grid-template-columns: repeat(16, 48px);
+  grid-template-rows: repeat(12, 48px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.cell.selected {
+  background-color: green;
+}
+
+.cell {
+  padding: 8px 4px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: #333;
+  position: relative;
+  min-width: 40px;
+}
+
+.program-container {
+  display: grid;
+  grid-template-columns: repeat(16, 48px);
+}
+
+.command {
+  padding: 8px 4px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  color: #333;
+  position: relative;
+  min-width: 40px;
+  min-height: 32px;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  font-size: 20px;
+}
+
+.command.selected {
+  background-color: yellow;
+}
